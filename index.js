@@ -45,7 +45,7 @@ let typeName = '';
 
 //funciones
 async function dataPokemon(dato) {
-    await fetch(`https://pokeapi.co/api/v2/pokemon/${dato}/`)
+    await fetch(`https://pokeapi.co/api/v2/pokemon/${dato.toLowerCase()}/`)
     .then(res => res.json())
     .then(res => {
         let card = document.createElement('div');
