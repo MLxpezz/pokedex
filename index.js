@@ -220,7 +220,7 @@ searchByType.addEventListener('click', e => {
 
 types.forEach(type => {
     type.addEventListener('click', e => {
-        searchType(type.textContent);
+        searchType(type.textContent.toLowerCase());
         btnByType = true;
         typeName = type.textContent;
     });
