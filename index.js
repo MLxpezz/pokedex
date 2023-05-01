@@ -172,7 +172,7 @@ search.addEventListener('click', e => {
     e.preventDefault();
     if(pokeName.value !== '') {
         removeChildren();
-        dataPokemon(pokeName.value);
+        dataPokemon(pokeName.value.toLowerCase());
         previous.style.display = 'none';
         next.style.display = 'none';
         home.style.display = 'block';
